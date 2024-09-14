@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #127cb1;
+    position: fixed;
+    margin-left: 20%;
+}
+
+form{
+    padding: 10%;
+    margin: 90%;
+    max-width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #f2f8fc;
+    color: #00474a;
+}
+
+.barcodeContainer {
+    display: grid;
+    place-items: center;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.barcodeContainer.show {
+    height: 150px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #00474a;
+    color: white;
+    cursor: pointer;
+}
